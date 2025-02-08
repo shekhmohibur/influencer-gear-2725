@@ -47,8 +47,16 @@ body a{
     gap: 30px;
 }
 /* header banner css */
+.banner-info{
+    display: flex;
+    flex-direction: column;
+}
+.banner-img{
+    width: 100%;}
 .banner{
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url('../images/Circle\ design.svg') right no-repeat;
 }
 
 /* mobile view responsive styles  */
