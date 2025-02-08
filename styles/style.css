@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    font-family: sans-serif;
+    font-family: poppins;
 }
 /* header navbar styles here  */
 /* menu icon css */
@@ -41,6 +42,11 @@ body a{
     display: flex;
     justify-content: space-between;
 }
+.brand{
+    color: rgb(58, 58, 58);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 .menu-bar{
     list-style-type: none;
     display: flex;
@@ -50,15 +56,52 @@ body a{
 .banner-info{
     display: flex;
     flex-direction: column;
+    margin-top: 145px;
+}
+.banner-title{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.banner-description{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-btn{
+    width: 196px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 41px;
+    margin-top: 26px;
+    cursor: pointer;
 }
 .banner-img{
-    width: 100%;}
+    width: 100%;
+    margin-top: 80px;
+}
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 132px;
     background: url('../images/Circle\ design.svg') right no-repeat;
 }
-
+.sponsors{
+    margin-top: 105px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 60px;
+}
+.sponsors img{
+    width: 100%;
+}
 /* mobile view responsive styles  */
 @media screen and (max-width:576px) {
     .navbar .menu-icon{
