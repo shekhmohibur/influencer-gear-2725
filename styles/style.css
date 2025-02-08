@@ -1,0 +1,29 @@
+*{
+
+}
+/* header navbar styles here  */
+/* menu icon css */
+.navbar .menu-icon span{
+    width: 30px;
+    height: 5px;
+    background: #000;
+}
+.navbar .menu-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+.navbar .menu-icon:hover span:first-child{
+    transform: translateY(2px) rotate(45deg);
+}
+.navbar .menu-icon:hover span:last-child{
+    transform: translateY(-5px) rotate(-45deg);
+}
+.navbar .menu-icon:hover span:nth-child(2){
+    display: none;
+}
