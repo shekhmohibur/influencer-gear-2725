@@ -274,6 +274,7 @@ body a{
         grid-area: featuredInfo;
     }
     .featured{
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
         "featuredInfo"
         "featuredImg"
