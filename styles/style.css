@@ -130,6 +130,12 @@ body a{
     align-items: center;
     margin: 0 auto;    
 }
+.collection-heading{
+    color: rgb(58, 58, 58);
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 100px auto 30px auto;
+}
 .collection-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -292,12 +298,6 @@ footer{
         column-gap: 30px;
         margin: 0 auto;
         margin-top: 50px;
-    }
-    .collection-heading{
-        color: rgb(58, 58, 58);
-        font-family: Poppins;
-        font-size: 1.75rem;
-        font-weight: 600;
     }
     .collection-gallery{
         grid-template-columns: repeat(1, 1fr);
