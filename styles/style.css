@@ -62,7 +62,6 @@ body a{
     display: flex;
     flex-direction: column;
     margin-top: 145px;
-    grid-area: bannerInfo;
 }
 .banner-title{
     color: rgb(58, 58, 58);
@@ -92,7 +91,6 @@ body a{
 .banner-img{
     width: 100%;
     margin-top: 80px;
-    grid-area: bannerImg;
 }
 .banner{
     display: grid;
@@ -119,22 +117,27 @@ body a{
         display: none;
         flex-direction: column;
         position: absolute;
-        max-width: 400px;
+        width: calc(100% - 120px);
         max-height: 400px;
-        top: 60px;
+        top: -15px;
         background: #ffffff;
         box-shadow: 0 0 5px rgb(225, 225, 225);
-        left: 50px;
+        left: 40px;
         }
         .menu-bar .menu-item:last-child{
             display: none;
         }
         .menu-bar .menu-item{
             text-align: center;
-            width: 320px;
         }
     .menu-icon:hover ~ .menu-bar{
         display: flex;
+    }
+    .banner-img{
+        grid-area: bannerImg;
+    }
+    .banner-info{
+        grid-area: bannerInfo;
     }
     .banner{
         grid-template-columns: repeat(1, 1fr);
@@ -142,14 +145,17 @@ body a{
         "bannerImg"
         "bannerInfo"
         ;
-        background-position: top;
+        background: none;
     }
     .banner-info{
         margin-top: 0;
+        text-align: center;
+        align-items: center;
     }
     .sponsors{
         grid-template-columns: repeat(4, 1fr);
         column-gap: 30px;
         margin: 0 auto;
+        margin-top: 50px;
     }
 }
