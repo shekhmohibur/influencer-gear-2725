@@ -4,6 +4,7 @@
 }
 /* header navbar styles here  */
 /* menu icon css */
+/* only for mobile devices  */
 .navbar .menu-icon span{
     width: 24px;
     height: 3px;
