@@ -19,6 +19,9 @@
     justify-content: center;
     display: none;
 }
+.nav-store{
+    display: none;
+}
 .navbar .menu-icon:hover span:first-child{
     transform: translateY(2px) rotate(45deg);
 }
@@ -52,11 +55,14 @@ body a{
     display: flex;
     gap: 30px;
 }
+/* menu-bar for mobile devices  */
+
 /* header banner css */
 .banner-info{
     display: flex;
     flex-direction: column;
     margin-top: 145px;
+    grid-area: bannerInfo;
 }
 .banner-title{
     color: rgb(58, 58, 58);
@@ -86,6 +92,7 @@ body a{
 .banner-img{
     width: 100%;
     margin-top: 80px;
+    grid-area: bannerImg;
 }
 .banner{
     display: grid;
@@ -104,7 +111,45 @@ body a{
 }
 /* mobile view responsive styles  */
 @media screen and (max-width:576px) {
-    .navbar .menu-icon{
+    .navbar .menu-icon, .nav-store, .navbar{
         display: flex;
+        align-items: center;
+    }
+    .menu-bar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        max-width: 400px;
+        max-height: 400px;
+        top: 60px;
+        background: #ffffff;
+        box-shadow: 0 0 5px rgb(225, 225, 225);
+        left: 50px;
+        }
+        .menu-bar .menu-item:last-child{
+            display: none;
+        }
+        .menu-bar .menu-item{
+            text-align: center;
+            width: 320px;
+        }
+    .menu-icon:hover ~ .menu-bar{
+        display: flex;
+    }
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "bannerImg"
+        "bannerInfo"
+        ;
+        background-position: top;
+    }
+    .banner-info{
+        margin-top: 0;
+    }
+    .sponsors{
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        margin: 0 auto;
     }
 }
