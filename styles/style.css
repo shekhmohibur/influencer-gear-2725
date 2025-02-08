@@ -185,6 +185,7 @@ body a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 16px;
 }
 .featured-heading{
     color: rgb(10, 8, 38);
