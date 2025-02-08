@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid rgb(0, 0, 0);
+    display: none;
 }
 .navbar .menu-icon:hover span:first-child{
     transform: translateY(2px) rotate(45deg);
@@ -26,4 +27,11 @@
 }
 .navbar .menu-icon:hover span:nth-child(2){
     display: none;
+}
+
+/* mobile view responsive styles  */
+@media screen and (max-width:576px) {
+    .navbar .menu-icon{
+        display: flex;
+    }
 }
